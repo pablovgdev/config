@@ -6,8 +6,14 @@
             "backgroundColor": "transparent"
         },
         {
-            "tag": "error",
+            "tag": "❌",
             "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "✔",
+            "color": "#00FF00",
             "strikethrough": false,
             "backgroundColor": "transparent"
         },
@@ -31,14 +37,8 @@
         },
         {
             "tag": "*",
-            "color": "#98C379",
+            "color": "#BF00FF",
             "strikethrough": false,
             "backgroundColor": "transparent"
         },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        }
     ]
