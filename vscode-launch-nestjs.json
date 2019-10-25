@@ -1,6 +1,4 @@
 {
-    // NestJS debug config
-    // Turn autoattach on and press F5 😊
     "version": "0.2.0",
     "configurations": [
         {
