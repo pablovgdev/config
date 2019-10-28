@@ -1,0 +1,59 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - run:
+          name: update
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: install
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: unit test
+          command: npm test
+      - run:
+          name: end to end test
+          command: npm run test:e2e
+      - run:
+          name: build
+          command: npm run build
+      - persist_to_workspace:
+          root: ~/project
+          paths: 
+            - ./*
+
+  deploy:
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run: |
+          gcloud auth activate-service-account $PROJECT_ACCOUNT --key-file="credentials.json"
+          gcloud config set project $PROJECT_ID --quiet
+          gcloud config set compute/zone europe-west --quiet
+          gcloud app deploy app.yaml
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
