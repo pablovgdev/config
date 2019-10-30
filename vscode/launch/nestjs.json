@@ -15,7 +15,8 @@
                 "${workspaceFolder}/lib/**/*.js",
                 "<node_internals>/**"
             ],
-            "console": "externalTerminal"
+            "console": "externalTerminal",
+            "envFile": "${workspaceRoot}/dev.env"
         }
     ]
 }
