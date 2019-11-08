@@ -18,7 +18,7 @@
             "backgroundColor": "transparent"
         },
         {
-            "tag": "?",
+            "tag": "*",
             "color": "#3498DB",
             "strikethrough": false,
             "backgroundColor": "transparent"
@@ -36,8 +36,14 @@
             "backgroundColor": "transparent"
         },
         {
-            "tag": "*",
+            "tag": "?",
             "color": "#BF00FF",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "<",
+            "color": "#02F5F1",
             "strikethrough": false,
             "backgroundColor": "transparent"
         },
