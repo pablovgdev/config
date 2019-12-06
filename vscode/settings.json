@@ -1,0 +1,80 @@
+{
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "breadcrumbs.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "One Monokai",
+    "editor.autoIndent": true,
+    "editor.detectIndentation": false,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FFFF00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "❌",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "✔️",
+            "color": "#00FF00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "*",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "?",
+            "color": "#BF00FF",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "<",
+            "color": "#02F5F1",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+    ],
+    "files.associations": {
+        "*.env": "dotenv"
+    },
+    "files.exclude": {
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "editor.fontFamily": "'DelugiaCode NF', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "window.menuBarVisibility": "toggle",
+    "prettier.printWidth": 100,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
