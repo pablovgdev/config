@@ -8,7 +8,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "One Monokai",
-    "editor.autoIndent": true,
+    "editor.autoIndent": "full",
     "editor.detectIndentation": false,
     "better-comments.tags": [
         {
@@ -60,21 +60,45 @@
             "backgroundColor": "transparent"
         },
     ],
+    "multiCommand.commands": [
+        {
+            "command": "godFormat",
+            "sequence": [
+                "editor.action.formatDocument",
+                "editor.action.autoFix",
+                "editor.action.formatDocument",
+                "editor.action.organizeImports",
+                "editor.action.formatDocument",
+            ]
+        },
+        {
+            "command": "multiCommand.swapChar",
+            "interval": 30,
+            "sequence": [
+                "cursorLeftSelect",
+                "editor.action.clipboardCutAction",
+                "cursorRight",
+                "editor.action.clipboardPasteAction"
+            ]
+        }
+    ],
     "files.associations": {
         "*.env": "dotenv"
     },
     "files.exclude": {
+        "**/*.spec.ts": true,
         "**/dist": true,
         "**/node_modules": true
     },
-    "editor.fontFamily": "'DelugiaCode NF', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Delugia Nerd Font', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "window.menuBarVisibility": "toggle",
-    "prettier.printWidth": 100,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "terminal.integrated.rendererType": "dom",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
 }
