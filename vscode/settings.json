@@ -71,16 +71,6 @@
                 "editor.action.formatDocument",
             ]
         },
-        {
-            "command": "multiCommand.swapChar",
-            "interval": 30,
-            "sequence": [
-                "cursorLeftSelect",
-                "editor.action.clipboardCutAction",
-                "cursorRight",
-                "editor.action.clipboardPasteAction"
-            ]
-        }
     ],
     "files.associations": {
         "*.env": "dotenv"
