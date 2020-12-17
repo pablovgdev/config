@@ -1,31 +1,20 @@
 {
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "always",
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "One Monokai",
     "editor.autoIndent": "full",
     "editor.detectIndentation": false,
     "better-comments.tags": [
         {
             "tag": "!",
             "color": "#FFFF00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "❌",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "✔️",
-            "color": "#00FF00",
             "strikethrough": false,
             "backgroundColor": "transparent"
         },
@@ -66,7 +55,6 @@
             "sequence": [
                 "editor.action.formatDocument",
                 "editor.action.autoFix",
-                "editor.action.formatDocument",
                 "editor.action.organizeImports",
                 "editor.action.formatDocument",
             ]
@@ -80,15 +68,20 @@
         "**/dist": true,
         "**/node_modules": true
     },
-    "editor.fontFamily": "'Delugia Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code Medium', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "window.menuBarVisibility": "toggle",
     "terminal.integrated.rendererType": "dom",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.importModuleSpecifier": "relative",
-    "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.importModuleSpecifier": "relative",
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "workbench.colorTheme": "One Monokai",
+    "git.enableSmartCommit": true,
+	"editor.insertSpaces": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	}
 }
