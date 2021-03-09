@@ -1,87 +1,145 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "always",
-    "breadcrumbs.enabled": true,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "editor.minimap.enabled": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "window.zoomLevel": 0,
-    "editor.autoIndent": "full",
-    "editor.detectIndentation": false,
-    "better-comments.tags": [
-        {
-            "tag": "!",
-            "color": "#FFFF00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "*",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "?",
-            "color": "#BF00FF",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "<",
-            "color": "#02F5F1",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-    ],
-    "multiCommand.commands": [
-        {
-            "command": "godFormat",
-            "sequence": [
-                "editor.action.formatDocument",
-                "editor.action.autoFix",
-                "editor.action.organizeImports",
-                "editor.action.formatDocument",
-            ]
-        },
-    ],
-    "files.associations": {
-        "*.env": "dotenv"
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "One Monokai",
+  "editor.autoIndent": "full",
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FFFF00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
     },
-    "files.exclude": {
-        "**/*.spec.ts": true,
-        "**/dist": true,
-        "**/node_modules": true
+    {
+      "tag": "❌",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
     },
-    "editor.fontFamily": "'Fira Code Medium', Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "window.menuBarVisibility": "toggle",
-    "terminal.integrated.rendererType": "dom",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.preferences.importModuleSpecifier": "relative",
-    "typescript.preferences.importModuleSpecifier": "relative",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "tag": "✔️",
+      "color": "#00FF00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
     },
-    "workbench.colorTheme": "One Monokai",
-    "git.enableSmartCommit": true,
-	"editor.insertSpaces": false,
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	}
+    {
+      "tag": "*",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "?",
+      "color": "#BF00FF",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "<",
+      "color": "#02F5F1",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    }
+  ],
+  "multiCommand.commands": [
+    {
+      "command": "godFormat",
+      "sequence": [
+        "editor.action.organizeImports",
+        "editor.action.formatDocument",
+        // "eslint.executeAutofix",
+      ]
+    }
+  ],
+  "files.associations": {
+    "*.env": "dotenv"
+  },
+  "files.exclude": {
+    "**/__init__.py": true,
+    "**/__pycache__": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "editor.fontFamily": "'Delugia Nerd Font', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "window.menuBarVisibility": "toggle",
+  "terminal.integrated.rendererType": "dom",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.suggestSelection": "first",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "python.languageServer": "Microsoft",
+  "git.enableSmartCommit": true,
+  "html.format.wrapLineLength": 100,
+  "debug.onTaskErrors": "debugAnyway",
+  "editor.detectIndentation": false,
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "git.ignoreWindowsGit27Warning": true,
+  "debug.javascript.autoAttachFilter": "disabled",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "python.linting.pylintEnabled": false,
+  "python.linting.pylamaEnabled": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "window.zoomLevel": 1,
 }
